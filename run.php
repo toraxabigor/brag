@@ -82,7 +82,7 @@ $namefile = trim(fgets(STDIN));
 echo "Link referral (ex: https://brag.gg/?invite=12683&secret=BY3146418834): ";
 $referral = trim(fgets(STDIN));
 $file = file_get_contents($namefile) or die ("File Not Found\n");
-$socks = explode("\r\n",$file);
+$socks = explode("\n",$file);
 $total = count($socks);
 echo "Total Socks: ".$total."\n";
  
